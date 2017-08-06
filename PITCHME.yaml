@@ -1,0 +1,5 @@
+charts: true
+highlight: tomorrow
+footnote : "© 2017 aknd"
+theme-override : assets/css/PITCHME.css
+transition: fade
