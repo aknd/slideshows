@@ -1,4 +1,7 @@
 ### Jiji
+
+[公式サイト](http://jiji2.unageanu.net/)
+<br>
 - FXシステムトレードフレームワーク |
 <br>
 <br>
@@ -6,9 +9,6 @@
 <br>
 <br>
 - Rubyで取引アルゴリズム作成　|
-<br>
-<br>
-[公式サイト](http://jiji2.unageanu.net/) |
 ---
 
 #### システム構成
