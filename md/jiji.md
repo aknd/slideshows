@@ -6,7 +6,9 @@
 <br>
 <br>
 - Rubyで取引アルゴリズム作成　|
-[公式サイト](http://jiji2.unageanu.net/)
+<br>
+<br>
+[公式サイト](http://jiji2.unageanu.net/) |
 ---
 
 #### システム構成
