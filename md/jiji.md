@@ -1,6 +1,4 @@
 ### Jiji
-
-[公式サイト](http://jiji2.unageanu.net/)
 <br>
 - FXシステムトレードフレームワーク |
 <br>
