@@ -1,2 +1,2 @@
 ## Jiji
----?include=./md/intro.md
+---?include=jiji/md/intro.md
