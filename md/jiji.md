@@ -10,4 +10,4 @@
 ---
 
 #### システム構成
----?include=assets/img/jiji.png
+---?image=assets/img/jiji.png
