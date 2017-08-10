@@ -26,13 +26,13 @@
 ---
 
 ### 基本的な定義（４）
-$ 商品Bを購入しているという条件での、商品Aを購入している条件付き確率: $
-$$ P \bigl( B \; | \; A \bigr) \equiv \frac{P \bigl( A \cap B \bigr) }{P(A)} $$ |
+$ \begin{align} 商品Bを購入しているという条件での、 \\\ 商品Aを購入している条件付き確率 \end{align}: $
+$$ P \bigl( B \; | \; A \bigr) \equiv \frac{P \bigl( A \cap B \bigr) }{P(A)} $$
 ---
 
 ### 基本的な定義（５）
 $ A \Rightarrow B: $
-$$ \begin{align} \quad & 「商品Aを購入していると商品Bも購入している」 \\\ & というルール（左側を条件部、右側を結論部と呼ぶ） \end{align} $ |
+$$ 「商品Aを購入していると商品Bも購入している」というルール \\\ & （左側を条件部、右側を結論部と呼ぶ） $
 ---
 
 ### 支持度（Support）
