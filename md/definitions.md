@@ -9,13 +9,13 @@
 ---
 
 ### 基本的な定義（２）
-- $ n( \Omega ): \quad 全トランザクション数（全バスケット数） $ |
+- $ n( \Omega ): \quad トランザクションの総数（バスケットの総数） $ |
 <br>
 <br>
-- $ n(A): \begin{align} \quad & 商品Aの購入を含むトランザクションの総数 \\\ & （商品Aを含むバスケット数）\end{align} $ |
+- $ n(A): \begin{align} \quad & 商品Aの購入を含むトランザクションの総数 \\\ & （商品Aを含むバスケットの総数）\end{align} $ |
 <br>
 <br>
-- $ n \bigl( A \cap B \bigr) : \begin{align} \quad & 商品Aと商品Bの両方の購入を含む \\\ & トランザクションの総数 \\\ & （商品Aと商品Bの両方を含むバスケット数）\end{align} $ |
+- $ n \bigl( A \cap B \bigr) : \begin{align} \quad & 商品Aと商品Bの両方の購入を含む \\\ & トランザクションの総数 \\\ & （商品Aと商品Bの両方を含むバスケットの総数）\end{align} $ |
 ---
 
 ### 基本的な定義（３）
@@ -28,7 +28,7 @@
 ### 基本的な定義（４）
 $ \begin{align} 商品Bを購入しているという条件での、 \\\ 商品Aを購入している条件付き確率 \end{align}: $
 <br>
-$$ P \bigl( A \; | \; B \bigr) \equiv \frac{P \bigl( A \cap B \bigr) }{P(A)} $$
+$$ P \bigl( A \; | \; B \bigr) \equiv \frac{P \bigl( A \cap B \bigr) }{P(B)} $$
 ---
 
 ### 基本的な定義（５）
