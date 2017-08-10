@@ -1,15 +1,15 @@
 ### 基本的な定義（１）
-- $\begin{align}トランザクション:\quad & 個々の客の1回の買い物 \\\ & （バスケット）\end{align}$ |
+- $ \begin{align} トランザクション: \quad & 個々の客の1回の買い物 \\\ & （バスケット）\end{align} $ |
 <br>
-- $\Omega:\quad 全トランザクション$ |
+- $ \Omega: \quad 全トランザクション $ |
 <br>
-- $A:\quad 商品Aの購入を含むトランザクション$ |
+- $ A: \quad 商品Aの購入を含むトランザクション $ |
 <br>
-- $n(\Omega):\quad 全トランザクション数（全バスケット数）$ |
+- $ n( \Omega ): \quad 全トランザクション数（全バスケット数） $ |
 <br>
-- $\begin{align}n(A):\quad & 商品Aの購入を含むトランザクションの総数 \\\ & （商品Aを含むバスケット数）\end{align}$ |
+- $ \begin{align} n(A): \quad & 商品Aの購入を含むトランザクションの総数 \\\ & （商品Aを含むバスケット数）\end{align} $ |
 <br>
-- $\begin{align]n\bigl(A\cap B\bigr):\quad & 商品Aと商品Bの両方の購入を含むトランザクションの総数 \\\ & （商品Aと商品Bの両方を含むバスケット数）\end{align}$ |
+- $ \begin{align} \bigl( A \cap B \bigr ): \quad & 商品Aと商品Bの両方の購入を含むトランザクションの総数 \\\ & （商品Aと商品Bの両方を含むバスケット数）\end{align} $ |
 ---
 
 ### 基本的な定義（２）
