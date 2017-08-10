@@ -27,7 +27,9 @@
 
 ### 支持度（Support）
 商品$A$の支持度（$Support$）
-$$Supp(A) := n(A) / n(Ω) = P(A)$$
+```math
+Supp(A) := n(A) / n(Ω) = P(A)
+```
 <br>
 ルール $A => B$ の支持度（$Support$）
 \begin{align*}
