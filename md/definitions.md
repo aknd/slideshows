@@ -28,7 +28,7 @@
 ### 支持度（Support）
 商品$A$の支持度（$Support$）
 $$\begin{align}
-Supp(A) \equiv &\frac{n(A)}{n(\Omega)}\\
+Supp(A) \equiv &\frac{n(A)}{n(\Omega)} \\
 &= P(A)
 \end{align}$$
 <br>
