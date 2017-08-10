@@ -25,20 +25,18 @@
 - $A => B$: 「商品$A$を購入していると商品$B$も購入している」というルール(左側を条件部、右側を結論部と呼ぶ) |
 ---
 
-### Support
-$Supp(A)$: 商品$A$の$Support$(支持度)
-```
+### 支持度（Support）
+商品$A$の支持度（$Support$）
 $$Supp(A) := n(A) / n(Ω) = P(A)$$
-```
 <br>
-$Supp(A => B)$: ルール $A => B$ の$Support$(支持度)
-
-\begin{align*}
+ルール $A => B$ の支持度（$Support$）
+\begin{align}
 Supp(A => B) & = n(A ∩ B) / n(Ω) \\
              & = P(A ∩ B) = P(B ∩ A) \\
              & = n(B ∩ A) / n(Ω) \\
              & = Supp(B => A)
-\end{align*}
+\end{align}
+<br>
 <br>
 矢印が付いていますが、Supp(A => B)に方向性はないことに注意しましょう。
 
