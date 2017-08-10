@@ -9,7 +9,7 @@
 <br>
 - $ \begin{align} n(A): \quad & 商品Aの購入を含むトランザクションの総数 \\\ & （商品Aを含むバスケット数）\end{align} $ |
 <br>
-- $ \begin{align} \bigl( A \cap B \bigr ): \quad & 商品Aと商品Bの両方の購入を含むトランザクションの総数 \\\ & （商品Aと商品Bの両方を含むバスケット数）\end{align} $ |
+- $ \begin{align} n \bigl( A \cap B \bigr) : \quad & 商品Aと商品Bの両方の購入を含む \\\ & トランザクションの総数 \\\ & （商品Aと商品Bの両方を含むバスケット数）\end{align} $ |
 ---
 
 ### 基本的な定義（２）
