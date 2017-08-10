@@ -32,12 +32,14 @@ Supp(A) := n(A) / n(Ω) = P(A)
 ```
 <br>
 ルール $A => B$ の支持度（$Support$）
+```math
 \begin{align*}
 Supp(A => B) & = n(A ∩ B) / n(Ω) \\
              & = P(A ∩ B) = P(B ∩ A) \\
              & = n(B ∩ A) / n(Ω) \\
              & = Supp(B => A)
 \end{align*}
+```
 <br>
 <br>
 矢印が付いていますが、Supp(A => B)に方向性はないことに注意しましょう。
