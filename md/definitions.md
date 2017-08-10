@@ -1,4 +1,5 @@
 ### 基本的な定義（１）
+<br>
 - $ トランザクション: \begin{align} \quad & 個々の客の1回の買い物 \\\ & （バスケット） \end{align} $ |
 <br>
 <br>
@@ -9,6 +10,7 @@
 ---
 
 ### 基本的な定義（２）
+<br>
 - $ n( \Omega ): \quad 全トランザクション数（全バスケット数） $ |
 <br>
 <br>
@@ -19,16 +21,16 @@
 ---
 
 ### 基本的な定義（３）
-- 商品$A$が購入される確率:$\quad P(A)=\frac{n(A)}{n(\Omega)}$ |
+- $ 商品Aが購入される確率: \quad P(A) \equiv \frac{n(A)}{n(\Omega)}$ |
 <br>
 <br>
-- $P\bigl(A\cap B\bigr)$: 商品$A$と商品$B$が同時購入される確率: $P\bigl(A\cap B\bigr)$:|
+- $ 商品Aと商品Bが同時購入される確率: \quad P \bigl( A \cap B \bigr) $ |
 <br>
 <br>
-- $P\bigl(B\;|\;A\bigr)$: 商品$A$を購入しているという条件付きでの、商品$B$を購入している条件付き確率 |
+- $ 商品Aを購入しているという条件付きでの、商品Bを購入している条件付き確率: \quad P \bigl( B \; | \; A \bigr) \equiv \frac{P(A \cap b)}{P(B)} $ |
 <br>
 <br>
-- $A\Rightarrow B$: 「商品$A$を購入していると商品$B$も購入している」というルール(左側を条件部、右側を結論部と呼ぶ) |
+- $ A \Rightarrow B: \quad 「商品Aを購入していると商品Bも購入している」というルール（左側を条件部、右側を結論部と呼ぶ） |
 ---
 
 ### 支持度（Support）
