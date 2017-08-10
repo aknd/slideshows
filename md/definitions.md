@@ -19,7 +19,7 @@
 - $P\bigl(A \cap B\bigr)$: 商品$A$と商品$B$が同時購入される確率 |
 <br>
 <br>
-- $P\bigl(B | A\bigr)$: 商品$A$を購入しているという条件付きでの、商品$B$を購入している条件付き確率 |
+- $P\bigl(B\;|\;A\bigr)$: 商品$A$を購入しているという条件付きでの、商品$B$を購入している条件付き確率 |
 <br>
 <br>
 - $A \Rightarrow B$: 「商品$A$を購入していると商品$B$も購入している」というルール(左側を条件部、右側を結論部と呼ぶ) |
@@ -27,7 +27,7 @@
 
 ### 支持度（Support）
 商品$A$の支持度（$Support$）
-$$Supp(A) := n(A) / n(Ω) = P(A)$$
+$$Supp(A) \equiv \frac{n(A)}{n(\Omega)} = P(A)$$
 <br>
 ルール $A => B$ の支持度（$Support$）
 $$\begin{align}
