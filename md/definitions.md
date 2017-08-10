@@ -27,12 +27,12 @@
 
 ### Support
 Supp(A): 商品AのSupport(支持度)
-```
+```text
 Supp(A) := n(A) / n(Ω) = P(A)
 ```
 
 Supp(A => B): ルール A => B のSupport(支持度)
-```
+```text
 Supp(A => B) := n(A ∩ B) / n(Ω) = P(A ∩ B) = P(B ∩ A) = n(B ∩ A) / n(Ω) =: Supp(B => A)
 ```
 矢印が付いていますが、Supp(A => B)に方向性はないことに注意しましょう。
