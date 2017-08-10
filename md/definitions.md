@@ -19,7 +19,8 @@
 ---
 
 ### 基本的な定義（３）
-- $ 商品Aが購入される確率: \quad P(A) \equiv \frac{n(A)}{n( \Omega )}$ |
+- $ \begin{align} 商品Aが購入される確率: \\\
+\qquad P(A) \equiv \frac{n(A)}{n( \Omega )} \end{align} $ |
 <br>
 <br>
 - $ 商品Aと商品Bが同時購入される確率: \quad P \bigl( A \cap B \bigr) \equiv \frac{n \bigl( A \cap B \bigr) }{n( \Omega )} $ |
