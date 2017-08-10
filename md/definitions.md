@@ -19,20 +19,22 @@
 ---
 
 ### 基本的な定義（３）
-- $ \begin{align} 商品Aが購入される確率: \\\ \qquad P(A) \equiv \frac{n(A)}{n( \Omega )} \end{align} $ |
+- $ \begin{align} 商品Aが購入される確率: \\\ \qquad \quad P(A) \equiv \frac{n(A)}{n( \Omega )} \end{align} $ |
 <br>
 <br>
-- $ \begin{align} 商品Aと商品Bが同時購入される確率: \\\ \qquad P \bigl( A \cap B \bigr) \equiv \frac{n \bigl( A \cap B \bigr) }{n( \Omega )} \end{align} $ |
+- $ \begin{align} 商品Aと商品Bが同時購入される確率: \\\ \qquad \quad P \bigl( A \cap B \bigr) \equiv \frac{n \bigl( A \cap B \bigr) }{n( \Omega )} \end{align} $ |
 ---
 
 ### 基本的な定義（４）
 $ \begin{align} 商品Bを購入しているという条件での、 \\\ 商品Aを購入している条件付き確率 \end{align}: $
+<br>
 $$ P \bigl( B \; | \; A \bigr) \equiv \frac{P \bigl( A \cap B \bigr) }{P(A)} $$
 ---
 
 ### 基本的な定義（５）
 $ A \Rightarrow B: $
-$$ 「商品Aを購入していると商品Bも購入している」というルール \\\ & （左側を条件部、右側を結論部と呼ぶ） $
+<br>
+$$ 「商品Aを購入していると商品Bも購入している」というルール \\\ & （左側を条件部、右側を結論部と呼ぶ） $$
 ---
 
 ### 支持度（Support）
