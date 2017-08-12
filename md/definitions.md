@@ -28,7 +28,7 @@
 ### 基本的な定義（４）
 $ \begin{align} 商品Bを購入しているという条件での、 \\\ 商品Aを購入している条件付き確率 \end{align}: $
 <br>
-$　\begin{align} P \bigl( A \; | \; B \bigr) & \equiv \frac{n \bigl( A \cap B \bigr)}{n(B)} & = \frac{P \bigl( A \cap B \bigr) }{P(B)} \end{align} $
+$　\begin{align} P \bigl( A \; | \; B \bigr) & \equiv \frac{n \bigl( A \cap B \bigr)}{n(B)} \\\ & = \frac{P \bigl( A \cap B \bigr) }{P(B)} \end{align} $
 ---
 
 ### 基本的な定義（５）
