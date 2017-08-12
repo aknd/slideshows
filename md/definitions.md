@@ -38,13 +38,21 @@ $ A \Rightarrow B: $
 $$ 「商品Aを購入していると商品Bも購入している」 \\\ というルール（左側を条件部、右側を結論部と呼ぶ） $$
 ---
 
+### アソシエーション分析における重要な指標
+1. 支持度（Support）
+<br>
+1. 確信度（Confidence）
+<br>
+1. リフト（Lift）
+---
+
 ### 支持度（１）
-$ 商品Aの支持度（Support）: $
+$ 商品Aの支持度: $
 $$ \begin{align} Supp(A) & \equiv \frac{n(A)}{n(\Omega)} \\\ & = P(A) \end{align} $$
 ---
 
 ### 支持度（２）
-$ ルール A \Rightarrow B の支持度（Support）: $
+$ ルール A \Rightarrow B の支持度: $
 $$ \begin{align} Supp \bigl( A \Rightarrow B \bigr) & \equiv \frac{n \bigl( A \cap B \bigr) }{n( \Omega )} \\\ & = P \bigl( A \cap B \bigr) = P \bigl( B \cap A \bigr) \\\ & = \frac{n \bigl( B \cap A \bigr) }{n( \Omega )} = Supp \bigl( B \Rightarrow A \bigr) \end{align} $$
 ---
 
@@ -52,5 +60,5 @@ $$ \begin{align} Supp \bigl( A \Rightarrow B \bigr) & \equiv \frac{n \bigl( A \c
 1. $ Supp \bigl( A \Rightarrow B \bigr) $ に方向性はない
 <br>
 1. 支持度が大きいルールを抽出する
-    - そもそもほとんど売れていな商品Aと商品Bがたまたま同時に買われた様な場合に、そのルールを重要視してしまうことを防ぐ |
-    - 支持度が小さいものは、そもそもほとんど売れていないので、たとえルールとして意味があったとしても、それを発見したところでビジネスとしての旨味はないとも考えられる |
+    - ほとんど売れていな商品Aと商品Bがたまたま同時に買われた様な場合に、そのルールを重要視してしまうことを防ぐ |
+    - 支持度が小さいものは、そもそもほとんど売れていないので、たとえルールとして意味があったとしても、それを発見したところでビジネスとしての旨味は少ない |
