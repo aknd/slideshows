@@ -68,7 +68,7 @@ $$ \begin{align} Supp \bigl( A \Rightarrow B \bigr) & \equiv \frac{n \bigl( A \c
 
 ### 確信度
 $ ルール A \Rightarrow B の確信度: $
-$$ \begin{align} Conf \bigl( A \Rightarrow B \bigr) & \equiv \frac{Supp \bigl( A \Rightarrow B \bigr) }{Supp(A)} & = \frac{P \bigl( A \cap B \bigr) }{P(A)} & = P \bigl( B \; | \; A \bigr) \end{align} $$
+$$ \begin{align} Conf \bigl( A \Rightarrow B \bigr) & \equiv \frac{Supp \bigl( A \Rightarrow B \bigr) }{Supp(A)} \\\ & = \frac{P \bigl( A \cap B \bigr) }{P(A)} \\\ & = P \bigl( B \; | \; A \bigr) \end{align} $$
 ---
 
 Confidenceが大きいルールほど、併売の結びつきが強いルールと言えます。
