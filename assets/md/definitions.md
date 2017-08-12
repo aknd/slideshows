@@ -64,3 +64,11 @@ $$ \begin{align} Supp \bigl( A \Rightarrow B \bigr) & \equiv \frac{n \bigl( A \c
 1. 支持度が大きいルールを抽出する
     - ほとんど売れていな商品 $ A $ と商品 $ B $ がたまたま同時に買われた様な場合に、そのルールを重要視してしまうことを防ぐ |
     - 支持度が小さいものは、そもそもほとんど売れていないので、たとえルールとして意味があったとしても、それを発見したところでビジネスとしての旨味は少ない |
+---
+
+### 確信度
+$ ルール A \Rightarrow B の確信度: $
+$$ \begin{align} Conf \bigl( A \Rightarrow B \bigr) & \equiv \frac{Supp \bigl( A \Rightarrow B \bigr) }{Supp(A)} & = \frac{P \bigl( A \cap B \bigr) }{P(A)} & = P \bigl( B \; | \; A \bigr)
+---
+
+Confidenceが大きいルールほど、併売の結びつきが強いルールと言えます。
