@@ -59,7 +59,8 @@ $$ \begin{align} Supp \bigl( A \Rightarrow B \bigr) & \equiv \frac{n \bigl( A \c
 ---
 
 ### 支持度に関する注意点
-1. $ Supp \bigl( A \Rightarrow B \bigr) $ に方向性はない
+1. $ Supp \bigl( A \Rightarrow B \bigr) $ は全トランザクションに対して、商品 $ A $ と商品 $ B $ が併売されているトランザクションの比率
+1. $ Supp \bigl( A \Rightarrow B \bigr) $ に方向性はない($ Supp \bigl( A \Rightarrow B \bigr) = Supp \bigl( B \Rightarrow A \bigr) $)
 <br>
 1. 支持度が大きいルールを抽出する
     - ほとんど売れていな商品 $ A $ と商品 $ B $ がたまたま同時に買われた様な場合に、そのルールを重要視してしまうことを防ぐ |
@@ -72,9 +73,9 @@ $$ \begin{align} Conf \bigl( A \Rightarrow B \bigr) & \equiv \frac{Supp \bigl( A
 ---
 
 ### 確信度に関する注意点
-1. $ Supp \bigl( A \Rightarrow B \bigr) $ は全トランザクションに対して、商品 $ A $ と商品 $ B $ が併売されているトランザクションの比率
 1. $ Conf \bigl( A \Rightarrow B \bigr) $ は、商品 $ A $ が購入されているトランザクションに対して、商品 $ B $ も購入されている（商品 $ A $ と商品 $ B $ が併売されている）トランザクションの比率
-1. $ Conf \bigl( A \Rightarrow B \bigr) $ が大きいほど、 $ A \Rightarrow B $ は強いルールと言える
+1. $ Conf \bigl( A \Rightarrow B \bigr) $ に方向性はある($ Conf \bigl( A \Rightarrow B \bigr) \neq Conf \bigl( B \Rightarrow A \bigr) $)
+1. $ Conf \bigl( A \Rightarrow B \bigr) $ が大きいほど、 商品 $ A $ と商品 $ B $ は関連が強いと言える
 ---
 
 ### リフト
