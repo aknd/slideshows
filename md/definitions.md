@@ -28,7 +28,7 @@
 ### 基本的な定義（４）
 $ \begin{align} 商品Bを購入しているという条件での、 \\\ 商品Aを購入している条件付き確率 \end{align}: $
 <br>
-$　\begin{align} P \bigl( A \; | \; B \bigr) & \equiv \frac{n \bigl( A \cap B \bigr)}{n(B)} \\\ & = \frac{P \bigl( A \cap B \bigr) }{P(B)} \end{align} $
+$ \begin{align} P \bigl( A \; | \; B \bigr) & \equiv \frac{n \bigl( A \cap B \bigr)}{n(B)} \\\ & = \frac{P \bigl( A \cap B \bigr) }{P(B)} \end{align} $
 ---
 
 ### 基本的な定義（５）
@@ -39,18 +39,13 @@ $$ 「商品Aを購入していると商品Bも購入している」 \\\ とい�
 ---
 
 ### 支持度（Support）
-商品$A$の支持度（$Support$）
-\begin{align} Supp(A) & \equiv \frac{n(A)}{n(\Omega)} \\\ & = P(A) \end{align}
+$ 商品Aの支持度（Support）: $
+$ \begin{align} Supp(A) & \equiv \frac{n(A)}{n(\Omega)} \\\ & = P(A) \end{align} $
 <br>
-ルール $A => B$ の支持度（$Support$）
-$$\begin{align}
-Supp(A => B) &= n(A ∩ B) / n(Ω) \\
-&= P(A ∩ B) = P(B ∩ A) \\
-&= n(B ∩ A) / n(Ω) \\
-&= Supp(B => A)
-\end{align}$$
-<br>
-<br>
+$ ルール A \Rightarrow B の支持度（Support）: $
+$ \begin{align} Supp \bigl( A \Rightarrow B \bigr) & \equiv \frac{n \bigl( A \cap B \bigr) }{n( \Omega )} \\\ & = P \bigl( A \cap B \bigr) \\\ & = P \bigl( B \cap A \bigr) \\\ & = \frac{n \bigl( B \cap A \bigr) }{n( \Omega ) \\\ & = Supp \bigl( B \Rightarrow A \bigr) \end{align} $
+---
+
 矢印が付いていますが、Supp(A => B)に方向性はないことに注意しましょう。
 
 Supportが大きいルールを抽出することが必要な理由は、そもそもほとんど売れていな商品Aと商品Bがたまたま同時に買われた様な場合に、そのルールを重要視してしまうことを防ぐためです。
