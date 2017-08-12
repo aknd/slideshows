@@ -72,6 +72,18 @@ $$ \begin{align} Conf \bigl( A \Rightarrow B \bigr) & \equiv \frac{Supp \bigl( A
 ---
 
 ### 確信度に関する注意点
-- $ Supp \bigl( A \Rightarrow B \bigr) $ は全トランザクションに対して、商品 $ A $ と商品 $ B $ が併売されているトランザクションの比率
-- $ Conf \bigl( A \Rightarrow B \bigr) $ は、商品 $ A $ が購入されているトランザクションに対して、商品 $ B $ も購入されている（商品 $ A $ と商品 $ B $ が併売されている）トランザクションの比率
-- $ Conf \bigl( A \Rightarrow B \bigr) $ が大きいほど、 $ A \Rightarrow B $ は強いルールと言える
+1. $ Supp \bigl( A \Rightarrow B \bigr) $ は全トランザクションに対して、商品 $ A $ と商品 $ B $ が併売されているトランザクションの比率
+1. $ Conf \bigl( A \Rightarrow B \bigr) $ は、商品 $ A $ が購入されているトランザクションに対して、商品 $ B $ も購入されている（商品 $ A $ と商品 $ B $ が併売されている）トランザクションの比率
+1. $ Conf \bigl( A \Rightarrow B \bigr) $ が大きいほど、 $ A \Rightarrow B $ は強いルールと言える
+---
+
+### リフト
+$ ルール A \Rightarrow B のリフト: $
+$$ \begin{align} Lift \bigl( A \Rightarrow B \bigr) & \equiv \frac{Conf \bigl( A \Rightarrow B \bigr) }{Supp(B)} \\\ & = \frac{P \bigl( B \; | \; A \bigr) }{P(B)} \end{align} $$
+
+### 確信度に関する注意点
+1. 単純に商品 $ B $ を購入する割合よりも、商品 $ A $ を購入した中で商品 $ B $ も購入した割合の方が高いとき、リフトは1を超える
+
+1. リフトが1を超えたルールが意味のあるルール
+
+1. リフトが大きいルールを抽出することで、ルールに関係なく売れている商品を除外することができる
