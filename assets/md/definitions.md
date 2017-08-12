@@ -63,7 +63,7 @@ $$ \begin{align} Supp \bigl( A \Rightarrow B \bigr) & \equiv \frac{n \bigl( A \c
 1. $ Supp \bigl( A \Rightarrow B \bigr) = Supp \bigl( B \Rightarrow A \bigr) $
 1. 支持度が大きいルールを抽出する
     - ほとんど売れていな商品 $ A $ と商品 $ B $ がたまたま同時に買われた様な場合に、そのルールを重要視してしまうことを防ぐ |
-    - 支持度が小さいものは、たとえルールとして意味があったとしても、ビジネスとしての旨味は少ない |
+    - 支持度が小さいと、たとえルールとして意味があったとしても、ビジネスとしての旨味は少ない |
 ---
 
 ### 確信度
