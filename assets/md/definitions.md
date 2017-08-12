@@ -71,4 +71,7 @@ $ ルール A \Rightarrow B の確信度: $
 $$ \begin{align} Conf \bigl( A \Rightarrow B \bigr) & \equiv \frac{Supp \bigl( A \Rightarrow B \bigr) }{Supp(A)} \\\ & = \frac{P \bigl( A \cap B \bigr) }{P(A)} \\\ & = P \bigl( B \; | \; A \bigr) \end{align} $$
 ---
 
-Confidenceが大きいルールほど、併売の結びつきが強いルールと言えます。
+### 確信度に関する注意点
+- $ Supp \bigl( A \Rightarrow B \bigr) $ は全トランザクションに対して、商品 $ A $ と商品 $ B $ が併売されているトランザクションの比率
+- $ Conf \bigl( A \Rightarrow B \bigr) $ は、商品 $ A $ が購入されているトランザクションに対して、商品 $ B $ も購入されている（商品 $ A $ と商品 $ B $ が併売されている）トランザクションの比率
+- $ Conf \bigl( A \Rightarrow B \bigr) $ が大きいほど、 $ A \Rightarrow B $ は強いルールと言える
