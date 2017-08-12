@@ -45,7 +45,7 @@ $$ 「商品Aを購入していると商品Bも購入している」 \\\ とい�
 1. 確信度（Confidence）
 <br>
 <br>
-1. リフト（Lift）
+1. リフト値（Lift）
 ---
 
 ### 支持度（１）
@@ -60,7 +60,7 @@ $$ \begin{align} Supp \bigl( A \Rightarrow B \bigr) & \equiv \frac{n \bigl( A \c
 
 ### 支持度に関する注意点
 1. $ Supp \bigl( A \Rightarrow B \bigr) $ は全トランザクションに対して、商品 $ A $ と商品 $ B $ が併売されているトランザクションの比率
-1. $ Supp \bigl( A \Rightarrow B \bigr) $ に方向性はない($ Supp \bigl( A \Rightarrow B \bigr) = Supp \bigl( B \Rightarrow A \bigr) $)
+1. $ Supp \bigl( A \Rightarrow B \bigr) = Supp \bigl( B \Rightarrow A \bigr) $
 <br>
 1. 支持度が大きいルールを抽出する
     - ほとんど売れていな商品 $ A $ と商品 $ B $ がたまたま同時に買われた様な場合に、そのルールを重要視してしまうことを防ぐ |
@@ -74,18 +74,19 @@ $$ \begin{align} Conf \bigl( A \Rightarrow B \bigr) & \equiv \frac{Supp \bigl( A
 
 ### 確信度に関する注意点
 1. $ Conf \bigl( A \Rightarrow B \bigr) $ は、商品 $ A $ が購入されているトランザクションに対して、商品 $ B $ も購入されている（商品 $ A $ と商品 $ B $ が併売されている）トランザクションの比率
-1. $ Conf \bigl( A \Rightarrow B \bigr) $ に方向性はある($ Conf \bigl( A \Rightarrow B \bigr) \neq Conf \bigl( B \Rightarrow A \bigr) $)
-1. $ Conf \bigl( A \Rightarrow B \bigr) $ が大きいほど、 商品 $ A $ と商品 $ B $ は関連が強いと言える
+1. $ Conf \bigl( A \Rightarrow B \bigr) \neq Conf \bigl( B \Rightarrow A \bigr) $
+1. $ Conf \bigl( A \Rightarrow B \bigr) $ が大きいほど、 商品 $ A $ と商品 $ B $ は関連が強いと言える（ただし、上の項目に注意）
+1. 次のリフト値も見ることが重要
 ---
 
-### リフト
-$ ルール A \Rightarrow B のリフト: $
+### リフト値
+$ ルール A \Rightarrow B のリフト値: $
 $$ \begin{align} Lift \bigl( A \Rightarrow B \bigr) & \equiv \frac{Conf \bigl( A \Rightarrow B \bigr) }{Supp(B)} \\\ & = \frac{P \bigl( B \; | \; A \bigr) }{P(B)} \end{align} $$
 ---
 
-### リフトに関する注意点
-1. 単純に商品 $ B $ を購入する割合よりも、商品 $ A $ を購入した中で商品 $ B $ も購入した割合の方が高いとき、リフトは1を超える
+### リフト値に関する注意点
+1. 単純に商品 $ B $ を購入する割合よりも、商品 $ A $ を購入した中で商品 $ B $ も購入した割合の方が高いとき、リフト値は1を超える
 
-1. リフトが1を超えたルールが意味のあるルール
+1. リフトが1を超えるルールが意味のあるルール
 
-1. リフトが大きいルールを抽出することで、ルールに関係なく売れている商品を除外することができる
+1. リフトが大きいルールを抽出することで、商品の関連性によらず売れている商品を除外することができる
