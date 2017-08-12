@@ -1,1 +1,1 @@
----?include=md/jiji.md
+---?include=assets/md/jiji.md
