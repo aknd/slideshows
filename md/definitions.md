@@ -38,12 +38,14 @@ $ A \Rightarrow B: $
 $$ 「商品Aを購入していると商品Bも購入している」 \\\ というルール（左側を条件部、右側を結論部と呼ぶ） $$
 ---
 
-### 支持度（Support）
+### 支持度（Support）（１）
 $ 商品Aの支持度（Support）: $
 $ \begin{align} Supp(A) & \equiv \frac{n(A)}{n(\Omega)} \\\ & = P(A) \end{align} $
-<br>
+---
+
+### 支持度（Support）（２）
 $ ルール A \Rightarrow B の支持度（Support）: $
-$ \begin{align} Supp \bigl( A \Rightarrow B \bigr) & \equiv \frac{n \bigl( A \cap B \bigr) }{n( \Omega )} \\\ & = P \bigl( A \cap B \bigr) \\\ & = P \bigl( B \cap A \bigr) \\\ & = \frac{n \bigl( B \cap A \bigr) }{n( \Omega ) \\\ & = Supp \bigl( B \Rightarrow A \bigr) \end{align} $
+$ \begin{align} Supp \bigl( A \Rightarrow B \bigr) & \equiv \frac{n \bigl( A \cap B \bigr) }{n( \Omega )} \\\ & = P \bigl( A \cap B \bigr) \\\ & = P \bigl( B \cap A \bigr) \\\ & = \frac{n \bigl( B \cap A \bigr) }{n( \Omega )} \\\ & = Supp \bigl( B \Rightarrow A \bigr) \end{align} $
 ---
 
 矢印が付いていますが、Supp(A => B)に方向性はないことに注意しましょう。
