@@ -107,7 +107,7 @@ Note: 確信度の補足です。もう一度確認すると、ルールエー�
 
 ### リフト
 $ ルール A \Rightarrow B のリフト: $
-$$ \begin{align} Lift \bigl( A \Rightarrow B \bigr) & \equiv \frac{Conf \bigl( A \Rightarrow B \bigr) }{Supp(B)} \\\ & = \frac{P \bigl( B \; | \; A \bigr) }{P(B)} = \frac{P \bigl( A \cap B \bigr)}{P(A)P(B)} = \frac{P \bigl( B \cap A \bigr)}{P(B)P(A)} \\\ & = \frac{Conf \bigl( B \Rightarrow A \bigr) }{Supp(A)} = Lift \bigl( B \Rightarrow A \bigr) \end{align} $$
+$$ \begin{align} Lift \bigl( A \Rightarrow B \bigr) & \equiv \frac{Conf \bigl( A \Rightarrow B \bigr) }{Supp(B)} \\\ & = \frac{P \bigl( B \; | \; A \bigr) }{P(B)} = \frac{P \bigl( A \cap B \bigr)}{P(A)P(B)} = \frac{P \bigl( A \; | \; B \bigr) }{P(A)} \\\ & = \frac{Conf \bigl( B \Rightarrow A \bigr) }{Supp(A)} = Lift \bigl( B \Rightarrow A \bigr) \end{align} $$
 
 Note: ルールエーナラバビーのリフト、リフトエーナラバビーと書きますが、これを、サポートビー分のコンフィデンスエーナラバビーで定義します。商品ビーが単独で売れている割合に対して、ルールエーナラバビーの確信度が何倍か、ということです。式を変形すると、AとBを入れ替えても同じ、つまり、ルールエーナラバビーのリフトと、ルールビーナラバエーのリフトは一致することが分かります。
 ---
