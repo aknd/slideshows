@@ -89,3 +89,10 @@ $$ \begin{align} Lift \bigl( A \Rightarrow B \bigr) & \equiv \frac{Conf \bigl( A
 1. リフトが1を超えるルールが意味のあるルール
 1. $ Lift \bigl( A \Rightarrow B \bigr) \neq Lift \bigl( B \Rightarrow A \bigr) $
 1. リフトが大きいルールを抽出することで、商品の関連性によらず売れている商品を除外することができる
+---
+
+### 補足
+1. ルールの条件部は複数の商品でも構わないが、今回は単一商品とする |
+1. 単一商品の確信度・リフトは次のように定義する
+    - $ Conf(A) \equiv Conf \bigl( \Omega \Rightarrow A \bigr) = frac{P \bigl( \Omega \cap A \bigr) }{P( \Omega )} = P(A) = Supp(A) $
+    - $ Lift(A) \equiv Lift \bigl( \Omega \Rightarrow A \bigr) = frac{Conf \bigl( \Omega => A \bigr) }{Supp(A)} = 1 $
