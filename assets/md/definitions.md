@@ -92,7 +92,6 @@ $$ \begin{align} Lift \bigl( A \Rightarrow B \bigr) & \equiv \frac{Conf \bigl( A
 ---
 
 ### 補足
-1. ルールの条件部は複数の商品でも構わないが、今回は単一商品とする |
-1. 単一商品の確信度・リフトは次のように定義する
-    - $ Conf(A) \equiv Conf \bigl( \Omega \Rightarrow A \bigr) = frac{P \bigl( \Omega \cap A \bigr) }{P( \Omega )} = P(A) = Supp(A) $
-    - $ Lift(A) \equiv Lift \bigl( \Omega \Rightarrow A \bigr) = frac{Conf \bigl( \Omega => A \bigr) }{Supp(A)} = 1 $
+- ルールの条件部は複数の商品でも構わないが、今回は単一商品とする |
+- $ \begin{align} Conf(A) & \equiv Conf \bigl( \Omega \Rightarrow A \bigr) \\\ & = frac{P \bigl( \Omega \cap A \bigr) }{P( \Omega )} \\\ & = P(A) = Supp(A) \end{align} $ |
+- $  \begin{align} Lift(A) & \equiv Lift \bigl( \Omega \Rightarrow A \bigr) \\\ & = frac{Conf \bigl( \Omega => A \bigr) }{Supp(A)} = 1 \end{align} $
