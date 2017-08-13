@@ -47,6 +47,8 @@ $ A \Rightarrow B: $
 <br>
 <br>
 $$ 「商品Aを購入していると商品Bも購入している」 \\\ というルール（左側を条件部、右側を結論部と呼ぶ） $$
+<br>
+※今回の講義では、条件部は単一商品とする
 ---
 
 ### 支持度（１）
@@ -60,11 +62,11 @@ $$ \begin{align} Supp \bigl( A \Rightarrow B \bigr) & \equiv \frac{n \bigl( A \c
 ---
 
 ### 支持度に関する注意点
-1. $ Supp \bigl( A \Rightarrow B \bigr) $ は全トランザクションに対して、商品 $ A $ と商品 $ B $ が併売されているトランザクションの比率
-1. $ Supp \bigl( A \Rightarrow B \bigr) = Supp \bigl( B \Rightarrow A \bigr) $
-1. 支持度が大きいルールを抽出する
-    - ほとんど売れていな商品 $ A $ と商品 $ B $ がたまたま同時に買われた様な場合に、そのルールを重要視してしまうことを防ぐ |
-    - 支持度が小さいと、たとえルールとして意味があったとしても、ビジネスとしての旨味は少ない |
+- $ Supp \bigl( A \Rightarrow B \bigr) $ は全トランザクションに対して、商品 $ A $ と商品 $ B $ が併売されているトランザクションの比率 |
+- $ Supp \bigl( A \Rightarrow B \bigr) = Supp \bigl( B \Rightarrow A \bigr) $ |
+支持度が大きいルールを抽出することで、 |
+- ほとんど売れていな商品 $ A $ と商品 $ B $ がたまたま同時に買われた様な場合に、そのルールを重要視してしまうことを防ぐ |
+- 支持度が小さいと、たとえルールとして意味があったとしても、ビジネスとしての旨味は少ない |
 ---
 
 ### 確信度
@@ -89,9 +91,3 @@ $$ \begin{align} Lift \bigl( A \Rightarrow B \bigr) & \equiv \frac{Conf \bigl( A
 1. リフトが1を超えるルールが意味のあるルール
 1. $ Lift \bigl( A \Rightarrow B \bigr) \neq Lift \bigl( B \Rightarrow A \bigr) $
 1. リフトが大きいルールを抽出することで、商品の関連性によらず売れている商品を除外することができる
----
-
-### 補足
-- ルールの条件部は複数の商品でも構わないが、今回は単一商品とする |
-- $ \begin{align} Conf(A) & \equiv Conf \bigl( \Omega \Rightarrow A \bigr) \\\ & = frac{P \bigl( \Omega \cap A \bigr) }{P( \Omega )} \\\ & = P(A) = Supp(A) \end{align} $ |
-- $  \begin{align} Lift(A) & \equiv Lift \bigl( \Omega \Rightarrow A \bigr) \\\ & = frac{Conf \bigl( \Omega => A \bigr) }{Supp(A)} = 1 \end{align} $
