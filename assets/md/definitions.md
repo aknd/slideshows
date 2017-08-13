@@ -84,7 +84,7 @@ $ ルール A \Rightarrow B のリフト: $
 $$ \begin{align} Lift \bigl( A \Rightarrow B \bigr) & \equiv \frac{Conf \bigl( A \Rightarrow B \bigr) }{Supp(B)} \\\ & = \frac{P \bigl( B \; | \; A \bigr) }{P(B)} \end{align} $$
 ---
 
-### リフト値に関する注意点
+### リフトに関する注意点
 1. 単純に商品 $ B $ を購入する割合よりも、商品 $ A $ を購入した中で商品 $ B $ も購入した割合の方が高いとき、リフトは1を超える
 1. リフトが1を超えるルールが意味のあるルール
 1. $ Lift \bigl( A \Rightarrow B \bigr) \neq Lift \bigl( B \Rightarrow A \bigr) $
