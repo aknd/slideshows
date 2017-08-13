@@ -1,3 +1,14 @@
+## 頻出パターンの発見法
+### ３つの重要な指標
+1. 支持度（Support）
+<br>
+<br>
+1. 確信度（Confidence）
+<br>
+<br>
+1. リフト（Lift）
+---
+
 ### 基本的な定義（１）
 - $ トランザクション: \begin{align} \quad & 個々の客の1回の買い物 \\\ & （バスケット） \end{align} $ |
 <br>
@@ -38,16 +49,6 @@ $ A \Rightarrow B: $
 $$ 「商品Aを購入していると商品Bも購入している」 \\\ というルール（左側を条件部、右側を結論部と呼ぶ） $$
 ---
 
-### アソシエーション分析における重要な３つの指標
-1. 支持度（Support）
-<br>
-<br>
-1. 確信度（Confidence）
-<br>
-<br>
-1. リフト値（Lift）
----
-
 ### 支持度（１）
 $ 商品Aの支持度: $
 $$ \begin{align} Supp(A) & \equiv \frac{n(A)}{n(\Omega)} \\\ & = P(A) \end{align} $$
@@ -75,16 +76,16 @@ $$ \begin{align} Conf \bigl( A \Rightarrow B \bigr) & \equiv \frac{Supp \bigl( A
 1. $ Conf \bigl( A \Rightarrow B \bigr) $ は、商品 $ A $ が購入されているトランザクションに対して、商品 $ B $ も購入されている（商品 $ A $ と商品 $ B $ が併売されている）トランザクションの比率
 1. $ Conf \bigl( A \Rightarrow B \bigr) \neq Conf \bigl( B \Rightarrow A \bigr) $
 1. $ Conf \bigl( A \Rightarrow B \bigr) $ が大きいほど、 商品 $ A $ と商品 $ B $ は関連が強いと言える（ただし、上の項目に注意）
-1. リフト値も見ることが重要
+1. リフトも見ることが重要
 ---
 
-### リフト値
-$ ルール A \Rightarrow B のリフト値: $
+### リフト
+$ ルール A \Rightarrow B のリフト: $
 $$ \begin{align} Lift \bigl( A \Rightarrow B \bigr) & \equiv \frac{Conf \bigl( A \Rightarrow B \bigr) }{Supp(B)} \\\ & = \frac{P \bigl( B \; | \; A \bigr) }{P(B)} \end{align} $$
 ---
 
 ### リフト値に関する注意点
-1. 単純に商品 $ B $ を購入する割合よりも、商品 $ A $ を購入した中で商品 $ B $ も購入した割合の方が高いとき、リフト値は1を超える
-1. リフト値が1を超えるルールが意味のあるルール
+1. 単純に商品 $ B $ を購入する割合よりも、商品 $ A $ を購入した中で商品 $ B $ も購入した割合の方が高いとき、リフトは1を超える
+1. リフトが1を超えるルールが意味のあるルール
 1. $ Lift \bigl( A \Rightarrow B \bigr) \neq Lift \bigl( B \Rightarrow A \bigr) $
-1. リフト値が大きいルールを抽出することで、商品の関連性によらず売れている商品を除外することができる
+1. リフトが大きいルールを抽出することで、商品の関連性によらず売れている商品を除外することができる
