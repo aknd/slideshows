@@ -64,9 +64,8 @@ $$ \begin{align} Supp \bigl( A \Rightarrow B \bigr) & \equiv \frac{n \bigl( A \c
 ### 支持度に関する注意点
 - $ Supp \bigl( A \Rightarrow B \bigr) $ は全トランザクションに対して、商品 $ A $ と商品 $ B $ が併売されているトランザクションの比率 |
 - $ Supp \bigl( A \Rightarrow B \bigr) = Supp \bigl( B \Rightarrow A \bigr) $ |
-支持度が大きいルールを抽出することで、 |
-- ほとんど売れていな商品 $ A $ と商品 $ B $ がたまたま同時に買われた様な場合に、そのルールを重要視してしまうことを防ぐ |
-- 支持度が小さいと、たとえルールとして意味があったとしても、ビジネスとしての旨味は少ない |
+- 支持度が大きいルールを抽出することで、ほとんど売れていな商品 $ A $ と商品 $ B $ がたまたま同時に買われた様な場合に、そのルールを重要視してしまうことを防ぐ |
+- 支持度が大きいルールを抽出することで、ルールとして意味があったとしても、ビジネスとしての旨味は少ないものを除外する |
 ---
 
 ### 確信度
@@ -75,10 +74,10 @@ $$ \begin{align} Conf \bigl( A \Rightarrow B \bigr) & \equiv \frac{Supp \bigl( A
 ---
 
 ### 確信度に関する注意点
-1. $ Conf \bigl( A \Rightarrow B \bigr) $ は、商品 $ A $ が購入されているトランザクションに対して、商品 $ B $ も購入されている（商品 $ A $ と商品 $ B $ が併売されている）トランザクションの比率
-1. $ Conf \bigl( A \Rightarrow B \bigr) \neq Conf \bigl( B \Rightarrow A \bigr) $
-1. $ Conf \bigl( A \Rightarrow B \bigr) $ が大きいほど、 商品 $ A $ と商品 $ B $ は関連が強いと言える（ただし、上の項目に注意）
-1. リフトも見ることが重要
+- $ Conf \bigl( A \Rightarrow B \bigr) $ は、商品 $ A $ が購入されているトランザクションに対して、商品 $ B $ も購入されている（商品 $ A $ と商品 $ B $ が併売されている）トランザクションの比率
+- $ Conf \bigl( A \Rightarrow B \bigr) \neq Conf \bigl( B \Rightarrow A \bigr) $
+- $ Conf \bigl( A \Rightarrow B \bigr) $ が大きいほど、 商品 $ A $ と商品 $ B $ は関連が強いと言える（ただし、上の項目に注意）
+- リフトも見ることが重要
 ---
 
 ### リフト
@@ -87,7 +86,7 @@ $$ \begin{align} Lift \bigl( A \Rightarrow B \bigr) & \equiv \frac{Conf \bigl( A
 ---
 
 ### リフトに関する注意点
-1. 単純に商品 $ B $ を購入する割合よりも、商品 $ A $ を購入した中で商品 $ B $ も購入した割合の方が高いとき、リフトは1を超える
-1. リフトが1を超えるルールが意味のあるルール
-1. $ Lift \bigl( A \Rightarrow B \bigr) \neq Lift \bigl( B \Rightarrow A \bigr) $
-1. リフトが大きいルールを抽出することで、商品の関連性によらず売れている商品を除外することができる
+- 単純に商品 $ B $ を購入する割合よりも、商品 $ A $ を購入した中で商品 $ B $ も購入した割合の方が高いとき、リフトは1を超える
+- リフトが1を超えるルールが意味のあるルール
+- $ Lift \bigl( A \Rightarrow B \bigr) \neq Lift \bigl( B \Rightarrow A \bigr) $
+- リフトが大きいルールを抽出することで、商品の関連性によらず売れている商品を除外することができる
