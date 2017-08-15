@@ -44,13 +44,15 @@
 [5] {herbs}       => {other vegetables} 0.007727504 0.4750000  2.454874
 [6] {onions}      => {other vegetables} 0.014234875 0.4590164  2.372268
 ```
+---
 
 ### 可視化（１）
 ```R
 > library(arulesViz)
 > plot(rules)
 ```
----?image=assets/img/plot.png
+---?image=assets/img/plot.png&size=contain
+---
 
 ### 可視化（２）
 ```R
@@ -60,4 +62,4 @@
        control=list(type="items"),
        margin=-0.1)
 ```
----?image=assets/img/plot_graph.png
+---?image=assets/img/plot_graph.png&size=contain
