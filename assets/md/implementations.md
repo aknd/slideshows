@@ -34,4 +34,4 @@
 @[13](最初の方だけ取り出す)
 @[14](中身を確認)
 
----?imgage=assets/img/plot.png
+---?image=assets/img/plot.png
