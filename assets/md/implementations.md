@@ -33,7 +33,5 @@
 @[12](subrulesをパイプ演算子で次のheadに渡す)
 @[13](最初の方だけ取り出す)
 @[14](中身を確認)
----
 
-### 出力結果
----?img=assets/img/plot.png
+---?imgage=assets/img/plot.png
