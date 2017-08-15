@@ -1,5 +1,4 @@
 ### アソシエーションルールの抽出
-
 ```R
 > library(arules)
 > library(dplyr)
@@ -33,5 +32,32 @@
 @[12](subrulesをパイプ演算子で次のheadに渡す)
 @[13](最初の方だけ取り出す)
 @[14](中身を確認)
+---
 
+### 出力結果
+```R
+    lhs              rhs                support     confidence lift    
+[1] {herbs}       => {root vegetables}  0.007015760 0.4312500  3.956477
+[2] {beef}        => {root vegetables}  0.017386884 0.3313953  3.040367
+[3] {onions}      => {root vegetables}  0.009456024 0.3049180  2.797452
+[4] {soft cheese} => {yogurt}           0.005998983 0.3511905  2.517462
+[5] {herbs}       => {other vegetables} 0.007727504 0.4750000  2.454874
+[6] {onions}      => {other vegetables} 0.014234875 0.4590164  2.372268
+```
+
+### 可視化（１）
+```R
+> library(arulesViz)
+> plot(rules)
+```
 ---?image=assets/img/plot.png
+
+### 可視化（２）
+```R
+> plot(rules, method="graph", control=list(type="items"), margin=-0.1)
+> plot(subrules,
+       method="graph",
+       control=list(type="items"),
+       margin=-0.1)
+```
+---?image=assets/img/plot_graph.png
