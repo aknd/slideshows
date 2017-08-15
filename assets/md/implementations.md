@@ -44,6 +44,8 @@
 [5] {herbs}       => {other vegetables} 0.007727504 0.4750000  2.454874
 [6] {onions}      => {other vegetables} 0.014234875 0.4590164  2.372268
 ```
+@[1](ルール「ハーブ => 根菜」がリフト１位)
+@[2](ルール「牛肉 => 根菜」リフト２位。支持度は１位より大きい)
 ---
 
 ### 可視化（１）
@@ -51,6 +53,8 @@
 > library(arulesViz)
 > plot(rules)
 ```
+@[1](arulesの可視化パッケージarulesVizの読み込み)
+@[2](関数plotにrulesを渡す)
 ---?image=assets/img/plot.png&size=contain
 ---
 
@@ -62,4 +66,10 @@
        control=list(type="items"),
        margin=-0.1)
 ```
+@[1](グラフを表示するが、商品が多すぎ)
+@[2-5](subrulesでグラフを表示)
+@[2](関数plotにsubrulesを渡す)
+@[3](methodにgraphを指定)
+@[4](商品の表示方法に関するオプション)
+@[5](余白の設定)
 ---?image=assets/img/plot_graph.png&size=contain
